@@ -4,7 +4,7 @@
 
 This file now tracks the **real Hermes web dashboard** as the primary UX reference.
 
-If HermesMob and Hermes Web disagree, **Hermes Web wins for V1 structure** unless a mobile adaptation is clearly necessary.
+If HermesOrbit and Hermes Web disagree, **Hermes Web wins for V1 structure** unless a mobile adaptation is clearly necessary.
 
 ## Real Hermes web navigation to mirror
 

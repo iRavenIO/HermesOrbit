@@ -1,10 +1,10 @@
-# HermesMob Documentation Program Spec
+# HermesOrbit Documentation Program Spec
 
 Date: 2026-05-21
 
 ## Summary
 
-This spec expands the original HermesMob design work into an investor-grade and build-grade documentation program.
+This spec expands the original HermesOrbit design work into an investor-grade and build-grade documentation program.
 
 The operating assumption is:
 - the user asked for a package strong enough to support serious investor conversations
@@ -40,7 +40,7 @@ Documents that make the package credible rather than aspirational:
 
 ## Problem
 
-The current HermesMob package was already credible as a product blueprint, but it still needed a more complete investor-facing layer:
+The current HermesOrbit package was already credible as a product blueprint, but it still needed a more complete investor-facing layer:
 - clearer market framing
 - stronger competitive mapping
 - more explicit feature inventory
@@ -105,7 +105,7 @@ That is now the active design.
 - `/Users/kousha/Sites/Local/Applications/HermesMob/docs/APP_STORE_NAMING_RESEARCH.md`
 - `/Users/kousha/Sites/Local/Applications/HermesMob/docs/HERMES_PARITY_AUDIT.md`
 - `/Users/kousha/Sites/Local/Applications/HermesMob/docs/MOBILE_API_CONTRACT_DRAFT.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/ios/HermesMob.xcodeproj`
+- `/Users/kousha/Sites/Local/Applications/HermesMob/ios/HermesOrbit.xcodeproj`
 
 ### New package additions
 - `/Users/kousha/Sites/Local/Applications/HermesMob/docs/DOCUMENTATION_INDEX.md`
@@ -138,7 +138,7 @@ That limitation is now explicit in the documentation rather than hidden.
 
 ## Approval criteria
 
-This documentation program should be considered approved if the user agrees that HermesMob should now be documented as:
+This documentation program should be considered approved if the user agrees that HermesOrbit should now be documented as:
 
 1. a serious operator-grade mobile product, not a simple chat wrapper
 2. a business that starts with self-hosted power users and expands toward hosted service

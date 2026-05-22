@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document is the canonical launch-scope decision for HermesMob v1.0.
+This document is the canonical launch-scope decision for HermesOrbit v1.0.
 
 Its purpose is to stop scope drift across the blueprint, parity audit, feature system, and roadmap.
 

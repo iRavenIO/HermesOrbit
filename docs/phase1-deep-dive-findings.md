@@ -1,4 +1,4 @@
-# HermesMob Phase 1 Deep Dive Findings
+# HermesOrbit Phase 1 Deep Dive Findings
 
 ## What failed
 
@@ -52,7 +52,7 @@
 - `docs/phase1-deep-dive-findings.md`
 
 ## Verification
-- `xcodebuild -project HermesMob.xcodeproj -scheme HermesMob -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.4.1' build`
+- `xcodebuild -project HermesOrbit.xcodeproj -scheme HermesOrbit -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.4.1' build`
 - Result: `BUILD SUCCEEDED`
 - Relaunched in Simulator and captured a fresh screenshot.
 

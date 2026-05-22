@@ -1,10 +1,10 @@
-# HermesMob Web-Parity Reset Plan
+# HermesOrbit Web-Parity Reset Plan
 
 ## Why this reset exists
 
-The current HermesMob concept drifted away from the **actual Hermes web dashboard**. After reviewing the real web app source in `~/.hermes/hermes-agent/web/src`, the right baseline for the iOS MVP is **not** an invented mobile IA first. It is a **mobile-native adaptation of the real Hermes web information architecture and interaction model**.
+The current HermesOrbit concept drifted away from the **actual Hermes web dashboard**. After reviewing the real web app source in `~/.hermes/hermes-agent/web/src`, the right baseline for the iOS MVP is **not** an invented mobile IA first. It is a **mobile-native adaptation of the real Hermes web information architecture and interaction model**.
 
-This means HermesMob V1 should feel like **Hermes Web on iPhone/iPad**, not a separate product concept with unrelated tabs.
+This means HermesOrbit V1 should feel like **Hermes Web on iPhone/iPad**, not a separate product concept with unrelated tabs.
 
 ## Source of truth reviewed
 
@@ -80,11 +80,11 @@ Cron/jobs is a first-class page.
 
 These are first-class management surfaces in the real web dashboard and must stay visible in the mobile parity plan.
 
-## What this means for HermesMob
+## What this means for HermesOrbit
 
-The earlier mobile IA is too abstracted. For V1 parity, HermesMob should mirror the web dashboard much more directly.
+The earlier mobile IA is too abstracted. For V1 parity, HermesOrbit should mirror the web dashboard much more directly.
 
-## Correct HermesMob V1 IA
+## Correct HermesOrbit V1 IA
 
 ### Primary tabs on iPhone
 
@@ -144,7 +144,7 @@ These ideas should **not** drive V1 anymore:
 
 When there is a conflict between:
 
-- previous HermesMob design documents, and
+- previous HermesOrbit design documents, and
 - the current real Hermes web dashboard,
 
 **the real Hermes web dashboard wins for V1 UX structure**, unless there is a strong mobile usability reason to adapt it.

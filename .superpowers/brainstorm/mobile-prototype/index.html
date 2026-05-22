@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HermesMob Prototype</title>
+  <title>HermesOrbit Prototype</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -73,7 +73,7 @@
     .section { margin-top: 24px; }
     .row { display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 20px; }
     @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
-    .phone { position: relative; aspect-ratio: 9 / 19.5; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); border-radius: 10px; }
+    .phone { position: relative; aspect-ratio: 9 / 19.5; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); border-radius: 10px; max-height: 80vh; margin: 0 auto; }
     .phone.dark { background: linear-gradient(180deg, #081514 0%, #051010 100%); }
     .phone.light { background: linear-gradient(180deg, #f8fbff 0%, #edf3fc 100%); }
     .overlay { position: absolute; inset: -8%; width: 116%; height: 116%; object-fit: cover; pointer-events: none; }
@@ -84,6 +84,17 @@
     .light .overlay { opacity: 0.06; }
     .label { margin-top: 10px; font-size: 13px; opacity: 0.8; }
     .mock-button { cursor: pointer; font-family: inherit; }
+    img { max-width: 100%; height: auto; }
+    @media (max-width: 640px) {
+      .wrap { padding: 12px; gap: 12px; }
+      .panel { padding: 12px; }
+      .mockup-body { padding: 12px !important; }
+      .phone { max-height: 70vh; }
+      .option { padding: 10px; }
+      .card-body { padding: 10px; }
+      [style*="padding:18px"] { padding: 12px !important; }
+      [style*="padding:22px"] { padding: 14px !important; }
+    }
   </style>
   <script>
     function toggleSelect(el) {
@@ -95,7 +106,7 @@
 <body>
   <div class="wrap">
     <div class="panel">
-      <h1>HermesMob Prototype Review</h1>
+      <h1>HermesOrbit Prototype Review</h1>
       <p class="subtitle">Logo applied. Scroll to review all prototype directions.</p>
     </div>
 

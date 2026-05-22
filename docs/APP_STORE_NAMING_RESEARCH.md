@@ -111,9 +111,9 @@ This approach:
 
 Current project decision:
 
-- **repo / project name**: `HermesMob`
-- **iOS app name**: `HermesMob`
-- **App Store reservation target**: `HermesMob`
+- **repo / project name**: `HermesOrbit`
+- **iOS app name**: `HermesOrbit`
+- **App Store reservation target**: `HermesOrbit`
 
 This keeps the mobile product, Xcode project, and App Store target aligned.
 

@@ -2,7 +2,7 @@
 
 ## 1. Roadmap goal
 
-This roadmap turns the HermesMob thesis into a staged delivery story that is credible to investors, product leadership, and engineering.
+This roadmap turns the HermesOrbit thesis into a staged delivery story that is credible to investors, product leadership, and engineering.
 
 The sequencing principle is:
 
@@ -89,7 +89,7 @@ Technical workstreams:
 - stronger notification routing and deep links
 
 Success criteria:
-- users trust HermesMob for day-to-day oversight and rapid intervention
+- users trust HermesOrbit for day-to-day oversight and rapid intervention
 - app becomes sticky beyond novelty
 
 ## Phase 3 — Hosted readiness and account layer
@@ -219,7 +219,7 @@ To keep the first release credible, the following should not block launch unless
 - review/demo environment is good enough for App Review and external demos
 
 ### Phase 2 is done when
-- users repeatedly rely on HermesMob for off-desktop oversight and intervention
+- users repeatedly rely on HermesOrbit for off-desktop oversight and intervention
 - artifacts, logs, and diagnostics are good enough to reduce laptop fallback for operator tasks
 
 ### Phase 3 is done when

@@ -2,7 +2,7 @@
 
 ## 1. Executive framing
 
-HermesMob sits at the intersection of five active trends:
+HermesOrbit sits at the intersection of five active trends:
 
 1. **Agentic AI is moving from novelty to operational software**
 2. **Developer and operator workflows are becoming increasingly asynchronous**
@@ -56,7 +56,7 @@ For this segment, “runs on infrastructure I own” is a buying feature, not a 
 
 ## 3. Category definition
 
-HermesMob should define itself in one of these adjacent but distinct categories:
+HermesOrbit should define itself in one of these adjacent but distinct categories:
 
 - **AI agent control plane**
 - **mobile operator console for agents**
@@ -196,7 +196,7 @@ Response:
 
 ## 9. Market conclusion
 
-The market case for HermesMob is strong if the product is framed correctly.
+The market case for HermesOrbit is strong if the product is framed correctly.
 
 The thesis is not that millions of consumers want a new AI chat app.
 The thesis is that a growing class of technical and operator users needs a **native, trustworthy, mobile-first control plane** for agent systems that already create real value.

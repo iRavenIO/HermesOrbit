@@ -33,7 +33,7 @@ It is intentionally minimal and exists to:
 ## Current files
 
 - `project.yml` — XcodeGen project definition
-- `Sources/HermesMobApp.swift` — sample app entry point
+- `Sources/HermesOrbitApp.swift` — sample app entry point
 - `Sources/ContentView.swift` — sample shell view
 
 ## Generate an Xcode project later

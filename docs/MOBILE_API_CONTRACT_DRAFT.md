@@ -2,7 +2,7 @@
 
 ## Goal
 
-Define the minimum backend contract needed to make HermesMob implementable.
+Define the minimum backend contract needed to make HermesOrbit implementable.
 
 This is a draft contract for the future Hermes mobile companion/API façade.
 It is meant to be stable enough for app development while remaining tolerant of Hermes version differences.
@@ -453,4 +453,4 @@ The app must be able to distinguish:
 
 This contract can begin as a thin compatibility layer in front of Hermes, but it should be treated as a product surface, not a temporary afterthought.
 
-If HermesMob is meant to be a serious operator console, this API is part of the product itself.
+If HermesOrbit is meant to be a serious operator console, this API is part of the product itself.

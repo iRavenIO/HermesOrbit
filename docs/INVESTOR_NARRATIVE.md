@@ -2,7 +2,7 @@
 
 ## 1. One-line pitch
 
-HermesMob is a native iOS control plane for Hermes Agent that lets users monitor, manage, and intervene in real AI agent workflows from anywhere.
+HermesOrbit is a native iOS control plane for Hermes Agent that lets users monitor, manage, and intervene in real AI agent workflows from anywhere.
 
 ## 2. The problem
 
@@ -21,7 +21,7 @@ The agent may be running, but the user does not feel fully in control.
 
 ## 3. The product thesis
 
-HermesMob closes that trust gap.
+HermesOrbit closes that trust gap.
 
 It is not another chatbot.
 It is a **mobile operator console** for people whose AI agents already matter.
@@ -44,7 +44,7 @@ The market has already validated:
 - remote agent supervision as a workflow category
 
 ### 4.2 The wedge is sharp
-HermesMob does not need to beat broad consumer AI apps at everything.
+HermesOrbit does not need to beat broad consumer AI apps at everything.
 It only needs to dominate one high-value workflow:
 
 > **operator-grade mobile control of meaningful agent systems**
@@ -87,7 +87,7 @@ If the product does not own those moments, the workflow remains incomplete.
 
 ## 6. The moat
 
-HermesMob’s moat is not “we have an LLM in an app.”
+HermesOrbit’s moat is not “we have an LLM in an app.”
 It is the combination of:
 - Hermes-native workflow parity
 - mobile-native trust and control design
@@ -145,7 +145,7 @@ The product wins if users say:
 
 ## 10. Investor conclusion
 
-HermesMob is compelling because it is not trying to be a generic AI product.
+HermesOrbit is compelling because it is not trying to be a generic AI product.
 It is trying to become the mobile control plane for a category that is already emerging:
 
 **people who run AI agents for real work and need trustworthy control away from the desktop.**

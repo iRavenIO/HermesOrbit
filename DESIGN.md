@@ -1,6 +1,6 @@
 ---
 version: alpha
-name: HermesMobile Foundation
+name: HermesOrbitile Foundation
 description: Hermes Agent website aesthetic translated into a trusted native iPhone and iPad operator console.
 colors:
   primary: "#0A1715"
@@ -85,7 +85,7 @@ spacing:
 
 ## Overview
 
-HermesMobile should feel like **Hermes Agent condensed into a secure native operator console for iPhone and iPad**. It inherits the Hermes Agent website aesthetic: dark green and near-black foundations, warm ivory text, muted gold accents, thin structural borders, and a technical calm that feels premium rather than flashy.
+HermesOrbitile should feel like **Hermes Agent condensed into a secure native operator console for iPhone and iPad**. It inherits the Hermes Agent website aesthetic: dark green and near-black foundations, warm ivory text, muted gold accents, thin structural borders, and a technical calm that feels premium rather than flashy.
 
 The app must not read as a generic AI chat app, neon cyber product, hacker tool, remote shell wrapper, or WebView shell. It should feel trustworthy, infrastructural, composed, and immediately understandable to a normal iOS user.
 
@@ -316,7 +316,7 @@ Additional icon simplicity rules:
 
 ### Launch/loading screen spec
 
-The launch/loading screen should communicate that HermesMobile is **establishing a secure operator console**.
+The launch/loading screen should communicate that HermesOrbitile is **establishing a secure operator console**.
 
 #### Required elements
 
@@ -445,7 +445,7 @@ The flow must explicitly handle at least these cases:
 
 ## Simplicity & Usability Principles
 
-HermesMobile should feel inspired by Hermes while remaining simple, familiar, and friendly like a modern iOS product. The goal is not a complex admin dashboard. The goal is the smallest clear mobile control plane that feels premium and safe.
+HermesOrbitile should feel inspired by Hermes while remaining simple, familiar, and friendly like a modern iOS product. The goal is not a complex admin dashboard. The goal is the smallest clear mobile control plane that feels premium and safe.
 
 ### Core rule
 

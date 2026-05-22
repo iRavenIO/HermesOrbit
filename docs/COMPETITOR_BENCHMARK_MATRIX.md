@@ -14,13 +14,13 @@ It is directional and qualitative. It is not a substitute for hands-on product t
 
 ## 3. Matrix
 
-### HermesMob target position
+### HermesOrbit target position
 - Product identity: native iOS operator console for Hermes Agent
 - Core wedge: self-hosted-first mobile control plane with hosted-ready path
 
 ### Benchmark table
 
-- **HermesMob (target)**
+- **HermesOrbit (target)**
   - Chat/session control: Strong
   - Jobs/cron management: Strong
   - Approvals/interventions: Strong
@@ -62,7 +62,7 @@ It is directional and qualitative. It is not a substitute for hands-on product t
   - Self-hosted compatibility: Weak for Hermes-specific remote-control use case
   - Native mobile trust model: Strong
   - Hosted expansion path: Weak/Unknown
-  - Notes: Excellent proof for native private AI, but different job-to-be-done than HermesMob
+  - Notes: Excellent proof for native private AI, but different job-to-be-done than HermesOrbit
 
 - **Marmy / CcCompanion**
   - Chat/session control: Strong
@@ -88,7 +88,7 @@ It is directional and qualitative. It is not a substitute for hands-on product t
 
 ## 4. Competitive takeaway
 
-HermesMob wins if it combines four things in one coherent product:
+HermesOrbit wins if it combines four things in one coherent product:
 - Hermes-native workflow parity
 - strong mobile approvals and interventions
 - self-hosted credibility

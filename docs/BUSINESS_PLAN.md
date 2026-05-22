@@ -1,8 +1,8 @@
-# HermesMob Business Plan
+# HermesOrbit Business Plan
 
 ## 1. Business Thesis
 
-HermesMob is not another AI chat app.
+HermesOrbit is not another AI chat app.
 
 It is a premium mobile control product for running, monitoring, and managing Hermes Agent across self-hosted and future managed-hosted deployments.
 
@@ -41,7 +41,7 @@ That positioning is more defensible and more premium.
 
 ### 3.2 Clear differentiators
 
-HermesMob can differentiate on:
+HermesOrbit can differentiate on:
 
 - meaningful Hermes operator-workflow parity rather than toy chat
 - multi-instance operator experience
@@ -106,9 +106,9 @@ Why they buy:
 
 ### Positioning statement
 
-For power users, founders, and operators who use Hermes Agent for real work, HermesMob is a native iOS control plane that lets them chat, monitor, manage, and intervene from anywhere.
+For power users, founders, and operators who use Hermes Agent for real work, HermesOrbit is a native iOS control plane that lets them chat, monitor, manage, and intervene from anywhere.
 
-Unlike generic AI apps, HermesMob is built for **agent operations**, not just conversations.
+Unlike generic AI apps, HermesOrbit is built for **agent operations**, not just conversations.
 
 ### Messaging pillars
 

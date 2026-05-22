@@ -1,8 +1,8 @@
-# HermesMob Product Blueprint
+# HermesOrbit Product Blueprint
 
 ## 1. Executive Summary
 
-HermesMob is a native iOS control plane for Hermes Agent.
+HermesOrbit is a native iOS control plane for Hermes Agent.
 
 The product goal is not to create another chat client. The goal is to build the best mobile interface for operating Hermes Agent across self-hosted and future managed-hosted deployments.
 
@@ -35,7 +35,7 @@ From an iPhone or iPad, a user should be able to:
 
 ### Strategic wedge
 
-HermesMob wins if it becomes the most trustworthy and most operator-grade mobile surface in the Hermes ecosystem.
+HermesOrbit wins if it becomes the most trustworthy and most operator-grade mobile surface in the Hermes ecosystem.
 
 The wedge is not generic AI chat. The wedge is:
 
@@ -513,7 +513,7 @@ This list is the minimum launch-oriented surface map, not the exhaustive contrac
 
 ### Ownership recommendation
 
-- HermesMob app team owns the client contracts and UX
+- HermesOrbit app team owns the client contracts and UX
 - Hermes companion/mobile API layer owns compatibility mapping and notification hooks
 - future hosted platform owns tenancy, billing state, and fleet-aware capabilities
 
@@ -735,7 +735,7 @@ The same mobile app should still work, with the connection target simply becomin
 
 ## 14. Conclusion
 
-HermesMob can be a credible and valuable product if it is built as a **meaningful operator-parity native iOS control plane for Hermes**, not as a chat clone or wrapped dashboard.
+HermesOrbit can be a credible and valuable product if it is built as a **meaningful operator-parity native iOS control plane for Hermes**, not as a chat clone or wrapped dashboard.
 
 The strongest path is:
 

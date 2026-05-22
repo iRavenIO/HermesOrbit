@@ -4,13 +4,13 @@
 
 This appendix separates what is already supported by evidence from what is still a strategic assumption.
 
-That distinction is important because HermesMob is strong conceptually, but still pre-implementation and pre-traction.
+That distinction is important because HermesOrbit is strong conceptually, but still pre-implementation and pre-traction.
 
 ## 2. What is already evidenced
 
 ### Product evidence
 - Hermes already exists as a real agent platform with CLI, messaging, dashboard, and API-adjacent surfaces.
-- A real iOS scaffold exists for HermesMob under `ios/` with generated Xcode project files.
+- A real iOS scaffold exists for HermesOrbit under `ios/` with generated Xcode project files.
 - The documentation package includes a product blueprint, business plan, parity audit, API draft, roadmap, and research docs.
 
 ### Category evidence
@@ -19,7 +19,7 @@ That distinction is important because HermesMob is strong conceptually, but stil
 - Public surveys and market reports indicate increasing investment in agentic AI.
 
 ### Workflow evidence
-- The operational jobs HermesMob targets are real: alerts, approvals, job monitoring, remote intervention, and multi-instance status checks.
+- The operational jobs HermesOrbit targets are real: alerts, approvals, job monitoring, remote intervention, and multi-instance status checks.
 - Competing products prove that users will install mobile software for these jobs when the workflow value is clear.
 
 ## 3. What remains an assumption

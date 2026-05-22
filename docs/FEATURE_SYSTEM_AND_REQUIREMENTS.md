@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document converts the HermesMob thesis into a structured feature system that can support:
+This document converts the HermesOrbit thesis into a structured feature system that can support:
 - investor discussions
 - product scoping
 - design prioritization
@@ -13,7 +13,7 @@ It complements `PRODUCT_BLUEPRINT.md` by being more explicit about what the prod
 
 ## 2. Product promise
 
-From an iPhone or iPad, a HermesMob user should be able to:
+From an iPhone or iPad, a HermesOrbit user should be able to:
 - connect to one or more Hermes environments
 - understand current state quickly
 - chat and operate with low friction
@@ -24,7 +24,7 @@ From an iPhone or iPad, a HermesMob user should be able to:
 
 ## 3. Feature architecture
 
-HermesMob features fall into six layers.
+HermesOrbit features fall into six layers.
 
 ### Layer 1 — Connectivity and identity
 - add instance

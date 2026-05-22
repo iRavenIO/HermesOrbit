@@ -1,10 +1,10 @@
-# HermesMob
+# HermesOrbit
 
 Native iOS control plane for Hermes Agent.
 
 ## Purpose
 
-HermesMob is intended to become a premium mobile product for operating Hermes Agent from iPhone and iPad with:
+HermesOrbit is intended to become a premium mobile product for operating Hermes Agent from iPhone and iPad with:
 
 - full Hermes web-dashboard parity in the MVP
 - native mobile interaction patterns
@@ -21,6 +21,6 @@ HermesMob is intended to become a premium mobile product for operating Hermes Ag
 
 ## Product naming
 
-- project name: `HermesMob`
-- iOS app name: `HermesMob`
-- App Store reservation target: `HermesMob`
+- project name: `HermesOrbit`
+- iOS app name: `HermesOrbit`
+- App Store reservation target: `HermesOrbit`

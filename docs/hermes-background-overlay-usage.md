@@ -1,4 +1,4 @@
-# HermesMob Background Overlay Usage
+# HermesOrbit Background Overlay Usage
 
 ## Asset files
 - PNG: `ios/Sources/Resources/hermes-atmosphere-overlay.png`
@@ -11,12 +11,12 @@ It is designed to sit over the app's real background color so the color system r
 
 ## Recommended usage
 ### Dark mode
-- Base: `background.primary` / the dark HermesMob background gradient
+- Base: `background.primary` / the dark HermesOrbit background gradient
 - Overlay opacity: `10%–16%`
 - Current implementation target: `14%`
 
 ### Light mode
-- Base: `background.primary.light` / the light blue HermesMob background gradient
+- Base: `background.primary.light` / the light blue HermesOrbit background gradient
 - Overlay opacity: `4%–8%`
 - Current implementation target: `6%`
 

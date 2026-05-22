@@ -1,8 +1,8 @@
-# HermesMob Project Operating Map
+# HermesOrbit Project Operating Map
 
 ## Purpose
 
-HermesMob is a native iOS control surface for Hermes Agent. The repo is currently split between:
+HermesOrbit is a native iOS control surface for Hermes Agent. The repo is currently split between:
 
 - product/spec docs in `docs/`
 - an iOS SwiftUI app scaffold in `ios/`
@@ -12,7 +12,7 @@ HermesMob is a native iOS control surface for Hermes Agent. The repo is currentl
 
 The current executable app is the SwiftUI target in:
 
-- `ios/Sources/HermesMobApp.swift`
+- `ios/Sources/HermesOrbitApp.swift`
 - `ios/Sources/ContentView.swift`
 
 The app is presently mock-data driven. There is no live network or persistence layer yet. That means the runtime contract is currently **view state + embedded mock models**, not a mobile API client.
@@ -31,7 +31,7 @@ Most important:
 ### 2. Native app scaffold
 The iOS app lives in:
 - `ios/project.yml`
-- `ios/HermesMob.xcodeproj/`
+- `ios/HermesOrbit.xcodeproj/`
 - `ios/Sources/`
 
 ### 3. Review / design artifacts
@@ -40,7 +40,7 @@ HTML and design iteration artifacts live under:
 - `DESIGN.md`
 
 ## Real source of truth for V1 structure
-HermesMob V1 should mirror the actual Hermes web dashboard structure. The web source of truth is:
+HermesOrbit V1 should mirror the actual Hermes web dashboard structure. The web source of truth is:
 
 - `~/.hermes/hermes-agent/web/src/App.tsx`
 
@@ -96,7 +96,7 @@ Safer pattern:
 
 ## Main execution path today
 
-1. `HermesMobApp` boots SwiftUI app
+1. `HermesOrbitApp` boots SwiftUI app
 2. `ContentView` decides between onboarding flow and app shell
 3. onboarding advances through local state only
 4. shell lands on Sessions-first mobile structure
@@ -123,4 +123,4 @@ When the app looks wrong or fails:
 
 ## Maintainer summary
 
-HermesMob is still in scaffold-to-MVP transition. The biggest current engineering risk is not build failure — it is **information-architecture drift and layout brittleness inside one monolithic SwiftUI file**. Keep V1 grounded in Hermes web parity and favor safe-area-aware, scrollable native layouts.
+HermesOrbit is still in scaffold-to-MVP transition. The biggest current engineering risk is not build failure — it is **information-architecture drift and layout brittleness inside one monolithic SwiftUI file**. Keep V1 grounded in Hermes web parity and favor safe-area-aware, scrollable native layouts.

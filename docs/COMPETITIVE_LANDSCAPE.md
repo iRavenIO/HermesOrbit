@@ -2,7 +2,7 @@
 
 ## 1. Competitive framing
 
-HermesMob will not compete in a single clean category. It overlaps with four adjacent product groups:
+HermesOrbit will not compete in a single clean category. It overlaps with four adjacent product groups:
 
 1. **Consumer AI chat apps**
 2. **Native private/on-device AI apps**
@@ -24,7 +24,7 @@ Strengths:
 - massive top-of-funnel appeal
 - simple value proposition for casual users
 
-Weaknesses against HermesMob:
+Weaknesses against HermesOrbit:
 - weak operator workflows
 - weak or absent multi-instance infrastructure framing
 - little credibility around self-hosted agent control
@@ -47,7 +47,7 @@ Strengths:
 - deep use of iOS capabilities
 - premium positioning through control and trust
 
-Weaknesses against HermesMob:
+Weaknesses against HermesOrbit:
 - often optimized for on-device or phone-native execution rather than remote Hermes operations
 - may not provide strong parity with Hermes-style server workflows, jobs, config, cron, gateway state, or multi-instance control
 
@@ -63,18 +63,18 @@ Examples observed in research:
 - CcCompanion
 
 Strengths:
-- closest category match to HermesMob
+- closest category match to HermesOrbit
 - strong proof that remote agent control from mobile is a real buying job
 - credible features around notifications, live output, pairing, session control, and mobile supervision
 
-Weaknesses against HermesMob:
+Weaknesses against HermesOrbit:
 - many are coding-agent specific rather than general Hermes operator consoles
 - several rely on SSH or desktop relay patterns rather than a first-class Hermes-native control surface
 - many focus on terminal workflows rather than holistic product administration
 
 What this means:
 - this is the true benchmark set
-- HermesMob must beat these products on operator completeness, trust model clarity, and Hermes-native workflow quality
+- HermesOrbit must beat these products on operator completeness, trust model clarity, and Hermes-native workflow quality
 
 ### Group D — mobile SSH and terminal tools
 Examples:
@@ -87,14 +87,14 @@ Strengths:
 - excellent terminal ergonomics for technical users
 - credibility with developers
 
-Weaknesses against HermesMob:
+Weaknesses against HermesOrbit:
 - they provide transport, not product workflow
 - no Hermes-specific status model, approval flow, skill management, memory visibility, or parity UX
 - users must know exactly what to type
 
 What this means:
 - these are substitutes for experts, not competitors for a control-plane product
-- HermesMob should feel like what comes after SSH, not a worse SSH app
+- HermesOrbit should feel like what comes after SSH, not a worse SSH app
 
 ## 3. Research-based competitor notes
 
@@ -124,7 +124,7 @@ Public positioning during research:
 Takeaway:
 - strongest evidence that users will adopt an iPhone app specifically for controlling agents remotely
 - demonstrates that mobile supervision is not a fringe use case
-- creates direct pressure for HermesMob to be strong on session visibility, notifications, approvals, and multi-project context
+- creates direct pressure for HermesOrbit to be strong on session visibility, notifications, approvals, and multi-project context
 
 ## 3.3 Onepilot
 Public positioning during research:
@@ -136,7 +136,7 @@ Public positioning during research:
 Takeaway:
 - validates interest in iPhone-native operations for self-hosted AI tooling
 - shows there is appetite for a dense, premium, technical mobile product
-- also means HermesMob must differentiate from “SSH plus deployment wizard” by being a dedicated Hermes control plane
+- also means HermesOrbit must differentiate from “SSH plus deployment wizard” by being a dedicated Hermes control plane
 
 ## 3.4 Marmy and CcCompanion
 Public positioning during research:
@@ -148,9 +148,9 @@ Takeaway:
 - strong proof that committed users actively want self-hosted mobile companions
 - these products validate the architecture direction around pairing, push, and direct control
 
-## 4. HermesMob differentiation
+## 4. HermesOrbit differentiation
 
-HermesMob should differentiate on six axes.
+HermesOrbit should differentiate on six axes.
 
 ### 4.1 Hermes-native parity
 Not “works with a terminal.”
@@ -230,14 +230,14 @@ Response:
 
 ### Risk: desktop/web is “good enough”
 Response:
-- if HermesMob becomes only a convenience wrapper, it loses
-- if HermesMob becomes the fastest, safest mobile intervention surface, it wins
+- if HermesOrbit becomes only a convenience wrapper, it loses
+- if HermesOrbit becomes the fastest, safest mobile intervention surface, it wins
 
 ## 6. Strategic conclusion
 
 The competitive landscape confirms that the opportunity is real but the product cannot be vague.
 
-HermesMob should not try to be:
+HermesOrbit should not try to be:
 - the broadest AI consumer app
 - the best general SSH client
 - a clone of terminal-based coding-agent companions

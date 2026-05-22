@@ -1,10 +1,10 @@
-# HermesMob Native iOS — Zero to One Plan
+# HermesOrbit Native iOS — Zero to One Plan
 
 > **For Hermes:** build this as a real native SwiftUI app, not a placeholder shell.
 
-**Goal:** Turn the current HermesMob scaffold into a real native iOS operator app that can connect to Hermes instances, show sessions, stream chat, expose system state, and manage approvals/config safely.
+**Goal:** Turn the current HermesOrbit scaffold into a real native iOS operator app that can connect to Hermes instances, show sessions, stream chat, expose system state, and manage approvals/config safely.
 
-**Current reality:** `/Users/kousha/Sites/Local/Applications/HermesMob/ios` is only a scaffold. It has `project.yml`, `HermesMobApp.swift`, and one large `ContentView.swift`. It is not yet an MVP.
+**Current reality:** `/Users/kousha/Sites/Local/Applications/HermesOrbit/ios` is only a scaffold. It has `project.yml`, `HermesOrbitApp.swift`, and one large `ContentView.swift`. It is not yet an MVP.
 
 **Product direction:** pure native iOS, premium-simple, light mode, grounded in the approved prototype/reference and existing Hermes product behavior.
 

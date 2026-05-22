@@ -1,8 +1,8 @@
-# HermesMob Documentation Index
+# HermesOrbit Documentation Index
 
 ## Purpose
 
-This directory is the investor-grade and build-grade documentation package for HermesMob: a native iOS control plane for Hermes Agent.
+This directory is the investor-grade and build-grade documentation package for HermesOrbit: a native iOS control plane for Hermes Agent.
 
 The package is designed to answer four questions convincingly:
 
@@ -55,7 +55,7 @@ The package is designed to answer four questions convincingly:
 
 ## Current thesis in one paragraph
 
-HermesMob is not another AI chat app. It is a native iOS operator console for running, monitoring, and controlling Hermes Agent across self-hosted deployments first and future managed-hosted deployments later. The product wedge is mobile visibility, approvals, interventions, multi-instance control, and agent operations from anywhere. The commercial path starts with technical self-hosted users and expands into a hosted service where the same app becomes the customer control plane.
+HermesOrbit is not another AI chat app. It is a native iOS operator console for running, monitoring, and controlling Hermes Agent across self-hosted deployments first and future managed-hosted deployments later. The product wedge is mobile visibility, approvals, interventions, multi-instance control, and agent operations from anywhere. The commercial path starts with technical self-hosted users and expands into a hosted service where the same app becomes the customer control plane.
 
 ## Document quality standard
 

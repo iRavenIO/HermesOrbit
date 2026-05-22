@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file records the public sources used in the HermesMob documentation package.
+This file records the public sources used in the HermesOrbit documentation package.
 
 It is a references appendix, not a claim that every source has been independently verified beyond the documented extraction/search step.
 

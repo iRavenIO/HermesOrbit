@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document consolidates the major risks facing HermesMob and the mitigation strategy already built into the project direction.
+This document consolidates the major risks facing HermesOrbit and the mitigation strategy already built into the project direction.
 
 ## 2. Product risks
 
@@ -121,7 +121,7 @@ Mitigation:
 
 The most important meta-risk is vagueness.
 
-HermesMob becomes risky when it is framed as a vague “AI app” or a vague “companion app.”
+HermesOrbit becomes risky when it is framed as a vague “AI app” or a vague “companion app.”
 It becomes stronger when it is framed and built as a precise product:
 
 > **a trustworthy mobile operator console for Hermes workflows, starting self-hosted and expanding into managed-hosted service.**

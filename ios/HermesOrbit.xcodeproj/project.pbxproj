@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,7 +61,7 @@
 		2E89CEA8F5A8EB10E7DB9075 /* HermesOrbitAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesOrbitAppState.swift; sourceTree = "<group>"; };
 		36F29380EB2DEED7996C7C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D25ADAD942C6C82A7F6D14C /* HermesDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesDesignSystem.swift; sourceTree = "<group>"; };
-		40798787247695E46881C86F /* HermesOrbit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HermesOrbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40798787247695E46881C86F /* HermesOrbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermesOrbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556AD595F0A3BC0775C9CF4A /* SecuritySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettingsView.swift; sourceTree = "<group>"; };
 		58268250FEBBC04314054A28 /* InstanceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceDetailView.swift; sourceTree = "<group>"; };
 		5C5BE2BED7C60AEC00BDE507 /* MemoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetailView.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		A260435F5B47B1A54609A501 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
 		A9494701B1196BEB7E17AAC8 /* JobsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListView.swift; sourceTree = "<group>"; };
 		AC2BDCD658888C4522AF27F4 /* ConfigListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigListView.swift; sourceTree = "<group>"; };
-		B35FEADEB53C2C246B2ACC94 /* hermes-atmosphere-overlay.svg */ = {isa = PBXFileReference; path = "hermes-atmosphere-overlay.svg"; sourceTree = "<group>"; };
+		B35FEADEB53C2C246B2ACC94 /* hermes-atmosphere-overlay.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "hermes-atmosphere-overlay.svg"; sourceTree = "<group>"; };
 		B524B13BECDB15997D2879E2 /* HermesMockModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesMockModels.swift; sourceTree = "<group>"; };
 		B5C5C33F9F9AD465FC8E98DF /* MetricPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricPanel.swift; sourceTree = "<group>"; };
 		BC78285EEC5E184542A685BE /* FEATURE_MAP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FEATURE_MAP.md; sourceTree = "<group>"; };
@@ -276,7 +276,6 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					D3BCA34A1BE1F7D632EE5BE1 = {
-						DevelopmentTeam = GYW277HMBV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -291,7 +290,6 @@
 			);
 			mainGroup = 04D933D8B6FA450277E90119;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -367,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GYW277HMBV;
+				DEVELOPMENT_TEAM = WY4YHLR74E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HermesOrbit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -508,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GYW277HMBV;
+				DEVELOPMENT_TEAM = WY4YHLR74E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HermesOrbit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

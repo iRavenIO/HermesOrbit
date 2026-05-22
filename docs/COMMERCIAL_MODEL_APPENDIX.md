@@ -2,13 +2,13 @@
 
 ## 1. Purpose
 
-This appendix makes the HermesMob business story more explicit for investor and operating discussions.
+This appendix makes the HermesOrbit business story more explicit for investor and operating discussions.
 
 It does not claim forecast precision. It defines the commercial logic, the monetized value, and the validation milestones required before confidence should increase.
 
 ## 2. Commercial thesis
 
-HermesMob monetizes a high-intent workflow, not general curiosity.
+HermesOrbit monetizes a high-intent workflow, not general curiosity.
 
 The product is valuable when it saves time, reduces missed interventions, increases trust in automation, and gives users a reason to keep real agent workflows running.
 

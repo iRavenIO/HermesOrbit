@@ -1,4 +1,4 @@
-# HermesMob Prototype → Native SwiftUI Map
+# HermesOrbit Prototype → Native SwiftUI Map
 
 Source of truth inspected:
 - `/Users/kousha/.hermes/hermes-agent/artifacts/hermesmob-web-prototype/app.js`
@@ -71,8 +71,8 @@ Source of truth inspected:
 6. Instances + Security + Notifications + Audit Log
 
 ## Current native file layout
-- `Sources/App/HermesMobRootView.swift`
-- `Sources/App/HermesMobAppState.swift`
+- `Sources/App/HermesOrbitRootView.swift`
+- `Sources/App/HermesOrbitAppState.swift`
 - `Sources/Features/Home/OnboardingFlowView.swift`
 - `Sources/Features/Home/MainShellView.swift`
 - `Sources/Features/Ops/SystemOverviewView.swift`
@@ -83,4 +83,4 @@ Source of truth inspected:
 
 ## Build status
 - `xcodegen generate` succeeded
-- `xcodebuild -project HermesMob.xcodeproj -scheme HermesMob -destination 'generic/platform=iOS Simulator' build` succeeded
+- `xcodebuild -project HermesOrbit.xcodeproj -scheme HermesOrbit -destination 'generic/platform=iOS Simulator' build` succeeded
