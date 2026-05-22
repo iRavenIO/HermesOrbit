@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HermesOrbit Architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 32px;
+    }
+    .header {
+      max-width: 1100px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f2ead8;
+      letter-spacing: -0.02em;
+    }
+    .pulse {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #7fb08e;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+    .subtitle { color: #8fa79a; font-size: 12px; margin-top: 4px; }
+    .diagram-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #0a0f1a;
+    }
+    .diagram-wrap svg { display: block; width: 100%; height: auto; }
+    .legend {
+      max-width: 1100px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="pulse"></div>
+    <div>
+      <h1>HermesOrbit Architecture</h1>
+      <div class="subtitle">iOS SwiftUI app ↔ Hermes Agent control plane</div>
+    </div>
+  </div>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 1080 760" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <path d="M 0,0 L 8,3 L 0,6 Z" fill="#587867"/>
+        </marker>
+        <marker id="arrow-sec" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <path d="M 0,0 L 8,3 L 0,6 Z" fill="#b89b5e"/>
+        </marker>
+      </defs>
+      <rect width="1080" height="760" fill="url(#grid)"/>
+      <rect width="1080" height="760" fill="#0a0f1a" opacity="0.7"/>
+
+      <!-- Device Boundary -->
+      <rect x="30" y="60" width="420" height="670" rx="12" fill="none" stroke="#587867" stroke-width="1.5" stroke-dasharray="8,4"/>
+      <text x="40" y="50" font-size="11" fill="#7fb08e" font-weight="600">iOS DEVICE</text>
+
+      <!-- Backend Boundary -->
+      <rect x="480" y="60" width="570" height="670" rx="12" fill="none" stroke="#b89b5e" stroke-width="1.5" stroke-dasharray="8,4"/>
+      <text x="490" y="50" font-size="11" fill="#b89b5e" font-weight="600">HERMES INSTANCE (self-hosted or hosted)</text>
+
+      <!-- =============== APP LAYER =============== -->
+      <!-- App Entry -->
+      <rect x="50" y="75" width="170" height="50" rx="6" fill="#0d1b18" stroke="#587867" stroke-width="1.5"/>
+      <text x="135" y="105" text-anchor="middle" font-size="12" fill="#f2ead8" font-weight="600">HermesOrbitApp</text>
+
+      <!-- App State -->
+      <rect x="240" y="75" width="190" height="50" rx="6" fill="#0d1b18" stroke="#587867" stroke-width="1.5"/>
+      <text x="335" y="105" text-anchor="middle" font-size="12" fill="#f2ead8" font-weight="600">AppState (Router)</text>
+
+      <line x1="220" y1="100" x2="240" y2="100" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Root View -->
+      <rect x="50" y="145" width="380" height="50" rx="6" fill="#0d1b18" stroke="#587867" stroke-width="1.5"/>
+      <text x="240" y="175" text-anchor="middle" font-size="12" fill="#f2ead8" font-weight="600">RootView → TabView (5 tabs)</text>
+
+      <line x1="135" y1="125" x2="135" y2="145" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="335" y1="125" x2="335" y2="145" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Features Row -->
+      <rect x="50" y="220" width="68" height="60" rx="6" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="84" y="245" text-anchor="middle" font-size="10" fill="#7fb08e" font-weight="600">Home</text>
+      <text x="84" y="260" text-anchor="middle" font-size="8" fill="#8fa79a">Onboarding</text>
+      <text x="84" y="272" text-anchor="middle" font-size="8" fill="#8fa79a">+ Shell</text>
+
+      <rect x="128" y="220" width="68" height="60" rx="6" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="162" y="245" text-anchor="middle" font-size="10" fill="#7fb08e" font-weight="600">Sessions</text>
+      <text x="162" y="260" text-anchor="middle" font-size="8" fill="#8fa79a">List ↔ Detail</text>
+      <text x="162" y="272" text-anchor="middle" font-size="8" fill="#8fa79a">Transcript</text>
+
+      <rect x="206" y="220" width="68" height="60" rx="6" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="240" y="245" text-anchor="middle" font-size="10" fill="#7fb08e" font-weight="600">Ops</text>
+      <text x="240" y="260" text-anchor="middle" font-size="8" fill="#8fa79a">Approvals</text>
+      <text x="240" y="272" text-anchor="middle" font-size="8" fill="#8fa79a">Jobs · Logs</text>
+
+      <rect x="284" y="220" width="68" height="60" rx="6" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="318" y="245" text-anchor="middle" font-size="10" fill="#7fb08e" font-weight="600">Manage</text>
+      <text x="318" y="260" text-anchor="middle" font-size="8" fill="#8fa79a">Config · Secrets</text>
+      <text x="318" y="272" text-anchor="middle" font-size="8" fill="#8fa79a">Skills · Memory</text>
+
+      <rect x="362" y="220" width="68" height="60" rx="6" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="396" y="245" text-anchor="middle" font-size="10" fill="#7fb08e" font-weight="600">Account</text>
+      <text x="396" y="260" text-anchor="middle" font-size="8" fill="#8fa79a">Instances</text>
+      <text x="396" y="272" text-anchor="middle" font-size="8" fill="#8fa79a">Security</text>
+
+      <line x1="240" y1="195" x2="240" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="210" x2="84" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="210" x2="162" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="210" x2="240" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="210" x2="318" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="210" x2="396" y2="210" stroke="#587867" stroke-width="1.5"/>
+      <line x1="84" y1="210" x2="84" y2="220" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="162" y1="210" x2="162" y2="220" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="240" y1="210" x2="240" y2="220" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="318" y1="210" x2="318" y2="220" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="396" y1="210" x2="396" y2="220" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Design System -->
+      <rect x="50" y="310" width="380" height="100" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="70" y="335" font-size="11" fill="#c9d9cf" font-weight="600">Design System</text>
+      <text x="70" y="355" font-size="9" fill="#8fa79a">HermesPalette · GlassCard · StatusBadge · ActionRow · HermesBackground</text>
+      <text x="70" y="372" font-size="9" fill="#8fa79a">Typography: display-xl · title-lg · body · caption · mono</text>
+      <text x="70" y="389" font-size="9" fill="#8fa79a">Assets: AppIcon · logo · tab icons (home/sessions/ops/manage/account)</text>
+
+      <line x1="240" y1="280" x2="240" y2="300" stroke="#587867" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <line x1="240" y1="300" x2="240" y2="300" stroke="#587867" stroke-width="1.5"/>
+      <line x1="240" y1="300" x2="240" y2="310" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Domain / Mock Models -->
+      <rect x="50" y="430" width="380" height="70" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="70" y="455" font-size="11" fill="#c9d9cf" font-weight="600">Domain Layer (Models + Mock Data)</text>
+      <text x="70" y="475" font-size="9" fill="#8fa79a">Session · Approval · Job · Config · Secret · Skill · Memory · Artifact · LogEntry</text>
+
+      <line x1="240" y1="410" x2="240" y2="430" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Networking (Stub) -->
+      <rect x="50" y="520" width="180" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="140" y="540" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Networking Layer</text>
+      <text x="140" y="555" text-anchor="middle" font-size="8" fill="#5e6c66">API Client · Auth · Streaming (stub)</text>
+
+      <!-- Security -->
+      <rect x="250" y="520" width="180" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="340" y="540" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Security</text>
+      <text x="340" y="555" text-anchor="middle" font-size="8" fill="#5e6c66">Trust Device · TLS · Keychain</text>
+
+      <line x1="240" y1="500" x2="240" y2="520" stroke="#587867" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <line x1="240" y1="500" x2="140" y2="520" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="240" y1="500" x2="340" y2="520" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Local Storage -->
+      <rect x="50" y="600" width="170" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="135" y="620" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Local Storage</text>
+      <text x="135" y="635" text-anchor="middle" font-size="8" fill="#5e6c66">@AppStorage · Keychain</text>
+
+      <!-- Push (Future) -->
+      <rect x="240" y="600" width="190" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="335" y="620" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Push Notifications</text>
+      <text x="335" y="635" text-anchor="middle" font-size="8" fill="#5e6c66">APNs · approval alerts (future)</text>
+
+      <line x1="140" y1="570" x2="140" y2="590" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="140" y1="590" x2="135" y2="600" stroke="#587867" stroke-width="1.5"/>
+      <line x1="140" y1="590" x2="335" y2="600" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <line x1="340" y1="570" x2="340" y2="590" stroke="#587867" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="340" y1="590" x2="135" y2="600" stroke="#587867" stroke-width="1.5"/>
+      <line x1="340" y1="590" x2="335" y2="600" stroke="#587867" stroke-width="1.5"/>
+
+      <!-- =============== BACKEND LAYER =============== -->
+      <!-- API Server -->
+      <rect x="500" y="75" width="220" height="50" rx="6" fill="#0d1b18" stroke="#b89b5e" stroke-width="1.5"/>
+      <text x="610" y="105" text-anchor="middle" font-size="12" fill="#f2ead8" font-weight="600">Hermes API Server</text>
+
+      <!-- Auth -->
+      <rect x="740" y="75" width="140" height="50" rx="6" fill="#0d1b18" stroke="#b89b5e" stroke-width="1.5"/>
+      <text x="810" y="100" text-anchor="middle" font-size="11" fill="#f2ead8" font-weight="600">Auth Service</text>
+
+      <!-- SSE Stream -->
+      <rect x="900" y="75" width="130" height="50" rx="6" fill="#0d1b18" stroke="#b89b5e" stroke-width="1.5"/>
+      <text x="965" y="100" text-anchor="middle" font-size="11" fill="#f2ead8" font-weight="600">SSE Stream</text>
+
+      <!-- Core Services -->
+      <rect x="500" y="145" width="530" height="110" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="520" y="170" font-size="11" fill="#c9d9cf" font-weight="600">Core Services</text>
+      <rect x="520" y="180" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="565" y="198" text-anchor="middle" font-size="9" fill="#8fa79a">Session Mgr</text>
+      <rect x="620" y="180" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="665" y="198" text-anchor="middle" font-size="9" fill="#8fa79a">Approval Mgr</text>
+      <rect x="720" y="180" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="765" y="198" text-anchor="middle" font-size="9" fill="#8fa79a">Job Runner</text>
+      <rect x="820" y="180" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="865" y="198" text-anchor="middle" font-size="9" fill="#8fa79a">Log Collector</text>
+      <rect x="520" y="218" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="565" y="236" text-anchor="middle" font-size="9" fill="#8fa79a">Config Mgr</text>
+      <rect x="620" y="218" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="665" y="236" text-anchor="middle" font-size="9" fill="#8fa79a">Secret Vault</text>
+      <rect x="720" y="218" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="765" y="236" text-anchor="middle" font-size="9" fill="#8fa79a">Skill Registry</text>
+      <rect x="820" y="218" width="90" height="28" rx="4" fill="#12231f" stroke="#587867" stroke-width="1"/>
+      <text x="865" y="236" text-anchor="middle" font-size="9" fill="#8fa79a">Memory Store</text>
+
+      <!-- Data Stores -->
+      <rect x="500" y="280" width="170" height="60" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="585" y="305" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">SQLite</text>
+      <text x="585" y="320" text-anchor="middle" font-size="8" fill="#5e6c66">Sessions · Config · Logs</text>
+
+      <rect x="690" y="280" width="170" height="60" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="775" y="305" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Vector DB</text>
+      <text x="775" y="320" text-anchor="middle" font-size="8" fill="#5e6c66">Memory · Skills · Artifacts</text>
+
+      <rect x="880" y="280" width="150" height="60" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="955" y="305" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Object Store</text>
+      <text x="955" y="320" text-anchor="middle" font-size="8" fill="#5e6c66">Artifacts · Files</text>
+
+      <!-- Gateway -->
+      <rect x="500" y="370" width="530" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="520" y="390" font-size="10" fill="#8fa79a" font-weight="600">Gateway</text>
+      <text x="520" y="405" font-size="8" fill="#5e6c66">Reverse proxy · Rate limit · TLS termination</text>
+
+      <!-- Background Workers -->
+      <rect x="500" y="445" width="260" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="630" y="465" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">Background Workers</text>
+      <text x="630" y="480" text-anchor="middle" font-size="8" fill="#5e6c66">Cron · Webhooks · Notifications</text>
+
+      <!-- LLM Provider -->
+      <rect x="780" y="445" width="250" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="905" y="465" text-anchor="middle" font-size="10" fill="#8fa79a" font-weight="600">LLM Provider</text>
+      <text x="905" y="480" text-anchor="middle" font-size="8" fill="#5e6c66">OpenAI · Anthropic · Local</text>
+
+      <!-- Connectors -->
+      <rect x="500" y="520" width="530" height="50" rx="6" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="520" y="540" font-size="10" fill="#8fa79a" font-weight="600">Connectors</text>
+      <text x="520" y="555" font-size="8" fill="#5e6c66">Discord · Telegram · Slack · Email · GitHub · Calendar · Webhooks</text>
+
+      <!-- =============== CROSS-BOUNDARY ARROWS =============== -->
+      <!-- API connection -->
+      <line x1="430" y1="100" x2="500" y2="100" stroke="#b89b5e" stroke-width="2" marker-end="url(#arrow-sec)"/>
+      <text x="465" y="95" text-anchor="middle" font-size="8" fill="#b89b5e">HTTPS / REST</text>
+
+      <!-- SSE connection -->
+      <line x1="430" y1="545" x2="500" y2="545" stroke="#b89b5e" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow-sec)"/>
+      <text x="465" y="540" text-anchor="middle" font-size="8" fill="#b89b5e">SSE</text>
+
+      <!-- Push connection -->
+      <line x1="335" y1="650" x2="335" y2="680" stroke="#3a5046" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <line x1="335" y1="680" x2="610" y2="680" stroke="#3a5046" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="610" y1="680" x2="610" y2="125" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="470" y="695" text-anchor="middle" font-size="8" fill="#5e6c66">APNs (future)</text>
+
+      <!-- =============== LEGEND =============== -->
+      <text x="520" y="630" font-size="10" fill="#8fa79a" font-weight="600">Legend</text>
+      <rect x="520" y="640" width="10" height="10" rx="2" fill="#12231f" stroke="#7fb08e" stroke-width="1.5"/>
+      <text x="536" y="649" font-size="8" fill="#94a3b8">Feature module</text>
+      <rect x="620" y="640" width="10" height="10" rx="2" fill="#0d1b18" stroke="#587867" stroke-width="1.5"/>
+      <text x="636" y="649" font-size="8" fill="#94a3b8">System component</text>
+      <rect x="750" y="640" width="10" height="10" rx="2" fill="#0d1b18" stroke="#3a5046" stroke-width="1.5"/>
+      <text x="766" y="649" font-size="8" fill="#94a3b8">Data / storage</text>
+      <rect x="860" y="640" width="10" height="10" rx="2" fill="#0d1b18" stroke="#b89b5e" stroke-width="1.5"/>
+      <text x="876" y="649" font-size="8" fill="#94a3b8">External service</text>
+    </svg>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#7fb08e;"></div> iOS Feature Module</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#587867;"></div> System Component</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#3a5046;"></div> Data / Storage</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#b89b5e;"></div> External / Network</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#12231f; border:1px solid #3a5046;"></div> Future / Planned</div>
+  </div>
+</body>
+</html>
