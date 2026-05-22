@@ -1,4 +1,4 @@
-name: HermesMob
+name: HermesOrbit
 options:
   bundleIdPrefix: com.kousha
   deploymentTarget:
@@ -6,11 +6,11 @@ options:
 settings:
   base:
     SWIFT_VERSION: 6.0
-    PRODUCT_BUNDLE_IDENTIFIER: com.kousha.hermesmob
-    PRODUCT_NAME: HermesMob
+    PRODUCT_BUNDLE_IDENTIFIER: com.kousha.hermesorbit
+    PRODUCT_NAME: HermesOrbit
 packages: {}
 targets:
-  HermesMob:
+  HermesOrbit:
     type: application
     platform: iOS
     sources:
@@ -19,7 +19,7 @@ targets:
       base:
         GENERATE_INFOPLIST_FILE: true
         INFOPLIST_KEY_UILaunchScreen_Generation: true
-        INFOPLIST_KEY_CFBundleDisplayName: HermesMob
+        INFOPLIST_KEY_CFBundleDisplayName: HermesOrbit
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: GYW277HMBV

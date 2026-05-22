@@ -68,7 +68,7 @@ struct OnboardingProgressHeader: View {
                     AppGlyph(size: 46)
 
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("HermesMob")
+                        Text("HermesOrbit")
                             .font(.system(size: 13, weight: .semibold, design: .rounded))
                             .foregroundStyle(HermesPalette.textSecondary)
                         Text(currentStage.title)
@@ -150,7 +150,7 @@ struct WelcomeStageView: View {
         StageScaffold(
             eyebrow: "Self-hosted operator console",
             title: "Keep Hermes in reach when you leave the desk.",
-            subtitle: "HermesMob brings sessions, approvals, jobs, diagnostics, and trusted interventions into a native iPhone surface instead of a squeezed web dashboard.",
+            subtitle: "HermesOrbit brings sessions, approvals, jobs, diagnostics, and trusted interventions into a native iPhone surface instead of a squeezed web dashboard.",
             currentStage: .welcome
         ) {
             VStack(spacing: 16) {
@@ -249,7 +249,7 @@ struct TrustStageView: View {
         StageScaffold(
             eyebrow: "Device trust",
             title: "Make powerful actions feel safe on phone.",
-            subtitle: "HermesMob should never feel overpowered. Phase 1 uses Face ID, scoped device trust, and explicit write friction before secrets, approvals, or admin actions move.",
+            subtitle: "HermesOrbit should never feel overpowered. Phase 1 uses Face ID, scoped device trust, and explicit write friction before secrets, approvals, or admin actions move.",
             currentStage: .trust
         ) {
             VStack(spacing: 16) {
@@ -328,7 +328,7 @@ struct ReadyStageView: View {
                 SecondaryButton(title: "Back", systemImage: "chevron.left") {
                     backAction()
                 }
-                PrimaryButton(title: "Enter HermesMob", systemImage: "arrow.right.circle.fill") {
+                PrimaryButton(title: "Enter HermesOrbit", systemImage: "arrow.right.circle.fill") {
                     enterAction()
                 }
             }

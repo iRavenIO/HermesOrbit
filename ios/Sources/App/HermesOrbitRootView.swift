@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HermesMobRootView: View {
+struct HermesOrbitRootView: View {
     @State private var appState = Phase1AppState()
 
     var body: some View {

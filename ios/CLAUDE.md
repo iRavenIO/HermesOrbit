@@ -1,4 +1,4 @@
-# HermesMob iOS — Phase 1 Build Context
+# HermesOrbit iOS — Phase 1 Build Context
 
 ## Project
 - Native SwiftUI iOS app for Hermes AI agent control plane
@@ -10,11 +10,12 @@
 ```bash
 cd /Users/kousha/Sites/Local/Applications/HermesMob/ios
 xcodegen generate
-xcodebuild -project HermesMob.xcodeproj -scheme HermesMob -destination 'platform=iOS Simulator,name=iPhone 16' ONLY_ACTIVE_ARCH=YES CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project HermesOrbit.xcodeproj -scheme HermesOrbit -destination 'id=8B20ECF1-97B2-4355-9A72-25E294993FBA' ONLY_ACTIVE_ARCH=YES CODE_SIGNING_ALLOWED=NO build
 ```
 
 ## Architecture (existing)
-- `Sources/App/` — HermesMobApp.swift, HermesMobRootView.swift, HermesMobAppState.swift
+- `Sources/HermesOrbitApp.swift` — App entry point
+- `Sources/App/` — HermesOrbitRootView.swift, HermesOrbitAppState.swift
 - `Sources/DesignSystem/` — HermesDesignSystem.swift, MetricPanel.swift
 - `Sources/Domain/` — HermesMockModels.swift
 - `Sources/Features/Home/` — OnboardingFlowView.swift, MainShellView.swift

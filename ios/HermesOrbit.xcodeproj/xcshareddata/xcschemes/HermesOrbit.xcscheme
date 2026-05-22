@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1F17E4A77A58E1A925E29C9"
-               BuildableName = "HermesMob.app"
-               BlueprintName = "HermesMob"
-               ReferencedContainer = "container:HermesMob.xcodeproj">
+               BlueprintIdentifier = "D3BCA34A1BE1F7D632EE5BE1"
+               BuildableName = "HermesOrbit.app"
+               BlueprintName = "HermesOrbit"
+               ReferencedContainer = "container:HermesOrbit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1F17E4A77A58E1A925E29C9"
-            BuildableName = "HermesMob.app"
-            BlueprintName = "HermesMob"
-            ReferencedContainer = "container:HermesMob.xcodeproj">
+            BlueprintIdentifier = "D3BCA34A1BE1F7D632EE5BE1"
+            BuildableName = "HermesOrbit.app"
+            BlueprintName = "HermesOrbit"
+            ReferencedContainer = "container:HermesOrbit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -57,10 +57,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1F17E4A77A58E1A925E29C9"
-            BuildableName = "HermesMob.app"
-            BlueprintName = "HermesMob"
-            ReferencedContainer = "container:HermesMob.xcodeproj">
+            BlueprintIdentifier = "D3BCA34A1BE1F7D632EE5BE1"
+            BuildableName = "HermesOrbit.app"
+            BlueprintName = "HermesOrbit"
+            ReferencedContainer = "container:HermesOrbit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1F17E4A77A58E1A925E29C9"
-            BuildableName = "HermesMob.app"
-            BlueprintName = "HermesMob"
-            ReferencedContainer = "container:HermesMob.xcodeproj">
+            BlueprintIdentifier = "D3BCA34A1BE1F7D632EE5BE1"
+            BuildableName = "HermesOrbit.app"
+            BlueprintName = "HermesOrbit"
+            ReferencedContainer = "container:HermesOrbit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>

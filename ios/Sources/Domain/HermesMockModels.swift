@@ -217,7 +217,7 @@ enum Phase1Data {
 
     static let sessions: [SessionSummary] = [
         SessionSummary(title: "Chance billing triage", subtitle: "Production Agent • last active 2m ago", source: "Telegram", icon: "dollarsign.circle"),
-        SessionSummary(title: "HermesMobile visual QA", subtitle: "Personal Hermes • reviewing overnight passes", source: "CLI", icon: "paintbrush.pointed"),
+        SessionSummary(title: "HermesOrbit visual QA", subtitle: "Personal Hermes • reviewing overnight passes", source: "CLI", icon: "paintbrush.pointed"),
         SessionSummary(title: "Infrastructure read-only audit", subtitle: "Lab Agent • tailscale / gateway posture", source: "Cron", icon: "antenna.radiowaves.left.and.right")
     ]
 
@@ -423,14 +423,14 @@ enum Phase1Data {
         MemoryEntry(target: "user_profile", content: "Kousha is a platform engineer. Concise operational style. K3s/ArgoCD/Terraform/Go expert.", category: "user", updatedAt: "2 days ago"),
         MemoryEntry(target: "feedback_responses", content: "No trailing summaries. No 'here is what I did' narration. Terse responses preferred.", category: "feedback", updatedAt: "5 days ago"),
         MemoryEntry(target: "project_infrastructure", content: "Two K3s clusters (k3s-ha00, k3s-ha01). ArgoCD at ha01-argocd.kousha.dev. Vault auto-unseal via CronJob.", category: "project", updatedAt: "1 week ago"),
-        MemoryEntry(target: "project_hermesmob", content: "HermesMob iOS is Phase 1 — native Swift control plane for Hermes AI agents. Sessions-first, light mode, XcodeGen build.", category: "project", updatedAt: "Today")
+        MemoryEntry(target: "project_hermesorbit", content: "HermesOrbit iOS is Phase 1 — native Swift control plane for Hermes AI agents. Sessions-first, light mode, XcodeGen build.", category: "project", updatedAt: "Today")
     ]
 
     // MARK: - Artifacts Mock Data
 
     static let artifacts: [ArtifactEntry] = [
         ArtifactEntry(name: "invoice-analysis-2026-05.md", artifactType: "Markdown", sizeBytes: 12_480, sessionTitle: "Chance billing triage", createdAt: "Today 09:11", previewNote: "Invoice anomaly report with line items and recommended actions."),
-        ArtifactEntry(name: "hermes-mobile-qa-pass.png", artifactType: "Screenshot", sizeBytes: 842_100, sessionTitle: "HermesMobile visual QA", createdAt: "Today 07:30", previewNote: "Full-screen capture of QA pass on iPhone 16 simulator."),
+        ArtifactEntry(name: "hermes-orbit-qa-pass.png", artifactType: "Screenshot", sizeBytes: 842_100, sessionTitle: "HermesOrbit visual QA", createdAt: "Today 07:30", previewNote: "Full-screen capture of QA pass on iPhone 16 simulator."),
         ArtifactEntry(name: "gateway-posture-report.json", artifactType: "JSON", sizeBytes: 4_320, sessionTitle: "Infrastructure read-only audit", createdAt: "Yesterday 22:44", previewNote: "Structured gateway and TLS posture for all 4 platforms."),
         ArtifactEntry(name: "cron-failure-trace.log", artifactType: "Log", sizeBytes: 28_900, sessionTitle: "Chance billing triage", createdAt: "Today 02:01", previewNote: "Full stack trace from nightly-reconcile failure at 02:00.")
     ]

@@ -1,10 +1,10 @@
 import SwiftUI
 
 @main
-struct HermesMobApp: App {
+struct HermesOrbitApp: App {
     var body: some Scene {
         WindowGroup {
-            HermesMobRootView()
+            HermesOrbitRootView()
         }
     }
 }
