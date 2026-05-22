@@ -8,7 +8,7 @@
 
 ## Build
 ```bash
-cd /Users/kousha/Sites/Local/Applications/HermesMob/ios
+cd /Users/kousha/Sites/Local/Applications/HermesOrbit/ios
 xcodegen generate
 xcodebuild -project HermesOrbit.xcodeproj -scheme HermesOrbit -destination 'id=8B20ECF1-97B2-4355-9A72-25E294993FBA' ONLY_ACTIVE_ARCH=YES CODE_SIGNING_ALLOWED=NO build
 ```

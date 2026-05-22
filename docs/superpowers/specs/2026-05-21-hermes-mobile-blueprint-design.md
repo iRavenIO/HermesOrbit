@@ -100,26 +100,26 @@ That is now the active design.
 ## Artifacts written or updated under this documentation program
 
 ### Existing foundation
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/PRODUCT_BLUEPRINT.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/BUSINESS_PLAN.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/APP_STORE_NAMING_RESEARCH.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/HERMES_PARITY_AUDIT.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/MOBILE_API_CONTRACT_DRAFT.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/ios/HermesOrbit.xcodeproj`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/PRODUCT_BLUEPRINT.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/BUSINESS_PLAN.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/APP_STORE_NAMING_RESEARCH.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/HERMES_PARITY_AUDIT.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/MOBILE_API_CONTRACT_DRAFT.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/ios/HermesOrbit.xcodeproj`
 
 ### New package additions
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/DOCUMENTATION_INDEX.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/MARKET_LANDSCAPE.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/COMPETITIVE_LANDSCAPE.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/COMPETITOR_BENCHMARK_MATRIX.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/FEATURE_SYSTEM_AND_REQUIREMENTS.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/DELIVERY_ROADMAP.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/INVESTOR_NARRATIVE.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/RISKS_AND_MITIGATIONS.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/COMMERCIAL_MODEL_APPENDIX.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/EVIDENCE_AND_ASSUMPTIONS_APPENDIX.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/RESEARCH_REFERENCES.md`
-- `/Users/kousha/Sites/Local/Applications/HermesMob/docs/V1_SCOPE_DECISIONS.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/DOCUMENTATION_INDEX.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/MARKET_LANDSCAPE.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/COMPETITIVE_LANDSCAPE.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/COMPETITOR_BENCHMARK_MATRIX.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/FEATURE_SYSTEM_AND_REQUIREMENTS.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/DELIVERY_ROADMAP.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/INVESTOR_NARRATIVE.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/RISKS_AND_MITIGATIONS.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/COMMERCIAL_MODEL_APPENDIX.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/EVIDENCE_AND_ASSUMPTIONS_APPENDIX.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/RESEARCH_REFERENCES.md`
+- `/Users/kousha/Sites/Local/Applications/HermesOrbit/docs/V1_SCOPE_DECISIONS.md`
 
 ## Current confidence statement
 
