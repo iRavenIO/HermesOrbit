@@ -26,46 +26,38 @@ HermesOrbit is a premium iPhone (and eventually iPad) app for operating Hermes A
 ## Quick start
 
 ```bash
-cd /Users/kousha/Sites/Local/Applications/HermesOrbit/ios
+cd /Users/kousha/Sites/Local/Applications/HermesOrbit
+
+# Clone with submodules
+git clone --recurse-submodules https://github.com/iRavenIO/HermesOrbit.git
+
+# Or if already cloned, init submodules
+git submodule update --init --recursive
+
+# Build iOS project
+cd ios
 xcodegen generate
 xcodebuild -project HermesOrbit.xcodeproj -scheme HermesOrbit \
   -destination 'id=8B20ECF1-97B2-4355-9A72-25E294993FBA' \
   ONLY_ACTIVE_ARCH=YES CODE_SIGNING_ALLOWED=NO build
 ```
 
-Open `HermesOrbit.xcodeproj` in Xcode to run on simulator.
-
 ## Repository layout
 
 ```
 HermesOrbit/
 ├── docs/                          # Investor + product docs
-│   ├── PRODUCT_BLUEPRINT.md
-│   ├── BUSINESS_PLAN.md
-│   ├── DELIVERY_ROADMAP.md
-│   ├── FEATURE_SYSTEM_AND_REQUIREMENTS.md
-│   └── ...
-├── ios/                           # Native iOS project
+├── ios/                           # iOS SwiftUI app (git submodule)
 │   ├── Sources/
-│   │   ├── App/                   # Root view + app state
-│   │   ├── DesignSystem/          # Tokens, components, backgrounds
-│   │   ├── Domain/                # Models + mock data
-│   │   ├── Features/
-│   │   │   ├── Home/              # Onboarding + main shell
-│   │   │   ├── Chat/              # Runtime chat preview
-│   │   │   ├── Sessions/          # Session list + detail
-│   │   │   ├── Ops/               # Approvals, jobs, logs, diagnostics
-│   │   │   ├── Manage/            # Config, secrets, skills, memory, artifacts
-│   │   │   └── Account/           # Instances, security, settings
-│   │   ├── Networking/            # API client (stub)
-│   │   ├── Security/              # Auth + trust
-│   │   └── Resources/             # Assets, icons, fonts
-│   ├── HermesOrbit.xcodeproj      # Generated — do not edit directly
-│   └── project.yml                # XcodeGen source of truth
+│   ├── HermesOrbit.xcodeproj
+│   └── project.yml
 ├── artifacts/                     # Design assets (overlays, logos)
 ├── .superpowers/brainstorm/       # HTML prototype for design direction
+├── ARCHITECTURE.html              # Interactive architecture diagram
 └── DESIGN.md                      # Design system specification
 ```
+
+**Note:** `ios/` is a git submodule. It has its own commit history and can be developed independently.
 
 ## Design direction
 
