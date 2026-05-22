@@ -1,0 +1,27 @@
+name: HermesMob
+options:
+  bundleIdPrefix: com.kousha
+  deploymentTarget:
+    iOS: '18.0'
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    PRODUCT_BUNDLE_IDENTIFIER: com.kousha.hermesmob
+    PRODUCT_NAME: HermesMob
+packages: {}
+targets:
+  HermesMob:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_CFBundleDisplayName: HermesMob
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: GYW277HMBV
+    scheme:
+      testTargets: []

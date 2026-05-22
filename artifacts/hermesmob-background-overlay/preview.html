@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HermesMob Overlay Preview</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #0a1112; color: #e7ece8; }
+    .wrap { padding: 24px; display: grid; gap: 24px; }
+    .panel { border: 1px solid rgba(255,255,255,0.12); padding: 20px; background: rgba(255,255,255,0.04); }
+    .row { display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 20px; }
+    .phone { position: relative; aspect-ratio: 9 / 19.5; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); }
+    .phone.dark { background: linear-gradient(180deg, #081514 0%, #051010 100%); }
+    .phone.light { background: linear-gradient(180deg, #f8fbff 0%, #edf3fc 100%); }
+    .overlay { position: absolute; inset: -8%; width: 116%; height: 116%; object-fit: cover; pointer-events: none; }
+    .top { transform: translateY(-18%); }
+    .mid { transform: translateY(-2%); }
+    .low { transform: translateY(16%); }
+    .dark .overlay { opacity: 0.14; }
+    .light .overlay { opacity: 0.06; }
+    .label { margin-top: 10px; font-size: 13px; opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <h1>HermesMob overlay preview</h1>
+      <p>Single transparent atmosphere asset previewed over light and dark backgrounds with top / middle / lower crops.</p>
+    </div>
+    <div class="panel">
+      <h2>Dark mode</h2>
+      <div class="row">
+        <div><div class="phone dark"><img class="overlay top" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="top crop"></div><div class="label">Top crop — launch/onboarding</div></div>
+        <div><div class="phone dark"><img class="overlay mid" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="middle crop"></div><div class="label">Middle crop — Home / Sessions / Chat</div></div>
+        <div><div class="phone dark"><img class="overlay low" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="lower crop"></div><div class="label">Lower crop — System / Manage / Docs</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Light mode</h2>
+      <div class="row">
+        <div><div class="phone light"><img class="overlay top" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="top crop"></div><div class="label">Top crop — launch/onboarding</div></div>
+        <div><div class="phone light"><img class="overlay mid" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="middle crop"></div><div class="label">Middle crop — Home / Sessions / Chat</div></div>
+        <div><div class="phone light"><img class="overlay low" src="../../ios/Sources/Resources/hermes-atmosphere-overlay.png" alt="lower crop"></div><div class="label">Lower crop — System / Manage / Docs</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
