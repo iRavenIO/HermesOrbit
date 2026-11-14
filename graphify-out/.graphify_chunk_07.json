@@ -1,0 +1,241 @@
+{
+  "nodes": [
+    {
+      "id": "logo_25_design_variant",
+      "label": "Logo 25px — Favicon Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-25.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Smallest variant of the HermesOrbit logo at 25px. The Hermes head-profile with winged helmet is rendered at favicon scale. Detail is heavily compressed — only the green silhouette and golden wing shapes are distinguishable. The image tests whether the icon reads at extreme small sizes. At this scale the figure loses fine facial detail but the directional profile and wing motif remain recognizable as a distinct silhouette. Background is transparent."
+    },
+    {
+      "id": "logo_36_design_variant",
+      "label": "Logo 36px — Small Icon Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-36.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Logo rendered at 36px. The Hermes profile — dark forest-green face/helmet in right-facing profile with a gold winged helmet — is more legible than at 25px. The two-tone palette (deep green and gold/amber) is now clearly readable. The wing shape on the helmet is distinct. Facial features are still simplified. This size targets notification icons and small UI badges. Background is transparent."
+    },
+    {
+      "id": "logo_46_design_variant",
+      "label": "Logo 46px — App List Icon Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-46.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Logo at 46px. Hermes right-profile head with dark green helmet and golden wing. At this size the profile silhouette is clearly a human head in classical Greco-Roman style, facing right. The gold wing extends upward and slightly leftward from the helmet. Minimal facial detail is present but the nose and jaw line become distinguishable. This scale targets list-item or table-cell icon usage in a mobile UI. Background is transparent."
+    },
+    {
+      "id": "logo_54_design_variant",
+      "label": "Logo 54px — Tab Bar / Nav Icon Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-54.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Logo at 54px targeting tab bar or navigation contexts. The Hermes head profile is comfortably legible — dark green face and helmet, gold winged crest. At this size the shape feels balanced and intentional. The wing adds a sense of upward motion and speed consistent with the Hermes mythology and an orbit/messenger app brand. Clean edges with transparent background."
+    },
+    {
+      "id": "logo_78_design_variant",
+      "label": "Logo 78px — Medium Icon Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-78.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Logo at 78px. Larger rendering reveals more detail: the Hermes figure is a classical side profile (facing right) of a youth or deity wearing a petasos-style winged helmet. Face is rendered in a clean flat-illustration style with simplified but expressive linework. The gold wing has visible feather layering suggesting depth and movement. The dark green creates a strong contrast anchor. Suitable for splash screens or prominent in-app icon placements."
+    },
+    {
+      "id": "logo_96_design_variant",
+      "label": "Logo 96px — App Icon / Header Scale",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-96.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Logo at 96px on transparent background. This is a high-fidelity rendering clearly showing the Hermes head in right-facing profile. The face is rendered in a clean vector illustration style: dark forest-green skin/helmet base, golden-amber wing with visible feather detail and gradient shading, white negative-space highlight areas defining the nose bridge, chin, and neck. The overall aesthetic is sporty and modern — reminiscent of athletic team logos or fintech branding — while referencing Greek mythology. This size is suitable for app icons, onboarding screens, and marketing headers."
+    },
+    {
+      "id": "logo_primary_concept",
+      "label": "Logo Primary — Master Full-Resolution",
+      "file_type": "image",
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Full-resolution master logo on transparent/checkerboard background. A classical Hermes head in right-facing profile, rendered in a modern flat-vector illustration style. Color palette: deep forest green (#1B4D2E range) for the face, neck, and helmet body; warm gold/amber for the prominent winged crest atop the helmet with visible feather articulation; white negative space used for facial highlights (nose, brow ridge, jaw) giving a clean three-dimensional feel. The figure is cropped at mid-neck/shoulder to emphasize the iconic winged helmet. Design language is athletic, confident, and mythologically grounded — evoking speed, communication, and orbit/messenger themes central to the HermesOrbit brand. The logo references the Hermes of Greek mythology (messenger god, god of travel and commerce) scaled as a mascot-style icon, similar in approach to Duolingo's owl or Discord's Wumpus: a character mark rather than a lettermark or abstract logo. No wordmark is present — the icon is intended to stand alone. Style sits between esports logo and premium fintech illustration."
+    }
+  ],
+  "edges": [
+    {
+      "source": "logo_25_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-25.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_36_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-36.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_46_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-46.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_54_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-54.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_78_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-78.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_96_design_variant",
+      "target": "logo_primary_concept",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo-96.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_25_design_variant",
+      "target": "logo_36_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "logo_36_design_variant",
+      "target": "logo_46_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "logo_46_design_variant",
+      "target": "logo_54_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "logo_54_design_variant",
+      "target": "logo_78_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "logo_78_design_variant",
+      "target": "logo_96_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "logo_primary_concept",
+      "target": "logo_96_design_variant",
+      "relation": "same_asset_different_resolution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logo_primary_concept",
+      "target": "logo_25_design_variant",
+      "relation": "shares_visual_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/logo.png",
+      "source_location": null,
+      "weight": 0.8
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "logo_brainstorm_set",
+      "label": "Mobile Prototype Logo Brainstorm Set",
+      "nodes": [
+        "logo_25_design_variant",
+        "logo_36_design_variant",
+        "logo_46_design_variant",
+        "logo_54_design_variant",
+        "logo_78_design_variant",
+        "logo_96_design_variant",
+        "logo_primary_concept"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".superpowers/brainstorm/mobile-prototype/"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
